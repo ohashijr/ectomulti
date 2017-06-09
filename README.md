@@ -312,3 +312,5 @@ defmodule EctoMulti.Router do
   # end
 end
 ```
+
+* Testar acessando /registrations
