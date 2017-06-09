@@ -1,0 +1,24 @@
+<h2>Listing registration</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Email</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= for memb <- @memberships do %>
+      <tr>
+        <td><%= memb.account.name %></td>
+        <td><%= memb.user.email %></td>
+        <td class="text-right">
+
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link "New registration", to: registration_path(@conn, :new) %>
